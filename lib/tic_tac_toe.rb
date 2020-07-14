@@ -10,7 +10,7 @@ WIN_COMBINATIONS = [
   [6,4,2]
 ]
 
-def instance
+def initialize
   @board = Array.new(9, " ")
 end
 
