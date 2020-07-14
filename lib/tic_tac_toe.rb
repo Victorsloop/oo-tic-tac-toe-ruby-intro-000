@@ -27,8 +27,8 @@ def input_to_index(user)
   user.to_i - 1
 end
 
-def move(index, current_player = "X")
-  @board[index] = current_player
+def move(index, player = "X")
+  @board[index] = player
 end
 
 def position_taken?(index)
