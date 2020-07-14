@@ -51,7 +51,7 @@ def turn
 
   def turn_count
     count = 0
-    @board.each |index|
+    @board.each do |index|
     if index == "X" || index == "O"
       turn += 1
     end
