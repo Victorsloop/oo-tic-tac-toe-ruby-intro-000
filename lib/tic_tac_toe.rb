@@ -39,7 +39,7 @@ index.between?(0,8) && !position_taken?(index)
 end
 
 def turn
-  puts "Please choosea number 1-9:"
+  puts "Please choose a number 1-9:"
   user = gets.chomp
   index = input_to_index(user)
   if valid_move?(index)
@@ -49,6 +49,7 @@ def turn
   else
     turn
   end
+end
 
   def turn_count
     count = 0
@@ -134,4 +135,4 @@ def play
     puts "Cat's Game!"
   end
 end
-end 
+end
