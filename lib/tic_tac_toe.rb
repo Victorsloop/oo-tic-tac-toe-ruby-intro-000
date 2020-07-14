@@ -47,27 +47,27 @@ def turn
     display_board
   else
     turn
-  end 
+  end
 
   def turn_count
-    count = 0 
+    count = 0
     @board.each |index|
     if index == "X" || index == "O"
-      turn += 1 
-    end 
-  end 
-  return count 
-end 
+      turn += 1
+    end
+  end
+  return count
+end
 
 def turn_count
   turns =  turn_count
-  if turns % 2 == 0 
+  if turns % 2 == 0
     player = "X"
-  else 
+  else
     player = "O"
-  end 
-  return player 
-end 
+  end
+  return player
+end
 
 def won?
   WIN_COMBINATIONS.each {|win_combination|
@@ -85,7 +85,7 @@ def won?
       return win_combo
     end
   }
-else 
+else
   return false
 end
 
